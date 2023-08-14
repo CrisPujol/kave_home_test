@@ -1,0 +1,38 @@
+@mixin flex($fd:null, $fw:null, $jc:null, $ai:null, $ac:null, $gap:null){
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+
+    flex-direction: $fd;
+    -webkit-flex-direction: $fd;
+
+    flex-wrap: $fw;
+    -webkit-flex-wrap: $fw;
+
+    justify-content: $jc;
+    -webkit-justify-content: $jc;
+
+    align-items: $ai;
+    -webkit-align-items: $ai;
+
+    align-content: $ac;
+    -webkit-align-content: $ac;
+
+    gap: $gap;
+    -webkit-gap: $gap;
+}
+
+
+@mixin flex-child($o:null, $fg:null, $fs:null, $as:null){
+    order: $o;
+    -webkit-order: $o;
+
+    flex-grow: $fg;
+    -webkit-lex-grow: $fg;
+
+    flex-shrink: $fs;
+    -webkit-flex-shrink: $fs;
+
+    align-self: $as;
+    -webkit-align-self: $as;
+}
